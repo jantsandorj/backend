@@ -1,13 +1,16 @@
 ### 
-GET http://localhost:9999/categories
+GET http://localhost:8080/productList
 
 ###
-GET http://localhost:9999/category?id=2
+GET http://localhost:8080/productInfo?id=2
 
 ###
-POST http://localhost:9999/category
+POST http://localhost:8080/productInfo
 Content-Type: application/json
 
 {
-    "category": "war"
+    "category": "Spreads",
+    "product": "Premium Sauce",
+    "inStock": "No",
+    "price": "$13.99"
 }
